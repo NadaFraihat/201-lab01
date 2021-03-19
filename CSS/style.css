@@ -1,21 +1,24 @@
 header h1{
     font-size: 60px;
     text-decoration: underline;
+    color: #560F58;
 }
 main{
     background-color: rgba(255, 255, 255, 0.4);
-
+    font-family: cursive;
+    padding-top: 20px;
 }
 main p{
     margin-left: 40px;
     font-size: 20px;
-}
-main .welcome{
-    font-size: 40px;
-    color: #8E8AEB;
+    color: #560F58;
 }
 main .quiz{
   text-align: center;
+}
+main ul li{
+  color: #560F58;
+  font-size: 20px;
 }
 .quiz img{
   width: 50%;
@@ -27,6 +30,9 @@ main dl{
 main dl dt{
   color: white;
   background-color: #8E8AEB;
+}
+main a {
+  color: #560F58;
 }
 footer{
   background-color: black;
