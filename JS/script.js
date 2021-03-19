@@ -23,7 +23,7 @@ case 'n':
   score++;
   break;
 default:
-  alert('Why! try it! Just guess yes or no ')
+  alert('Why! try it! Just guess yes or no ');
   activityCase= prompt('Do I like swimming?');
   break;
 }
@@ -97,7 +97,7 @@ case 'n':
   alert('I hate being lonely  ');
   break;
 default:
-  alert('Why! try it! Just guess yes or no ')
+  alert('Why! try it! Just guess yes or no ');
   myRelations= prompt('Do I like make a big network relations?');
   break; }
 let myStatus= prompt('Am I single?');
@@ -136,16 +136,12 @@ for(let i=0; i<4;i++){
     //console.log('correct answer');
     break;
   }
-  else if (guess<=6){
+  else if (guess<=6 ||guess<=10 ){
     alert('It is too low,try another number');
   //console.log('incorrect answer')
   }
-  else if(6 < guess || guess <=10){
-    alert('You are about to reach! but still low');
-  //console.log('incorrect answer');
-  }
-  else if (guess===12) {
-    alert('Why do not you increase it by one!');
+  else if (guess>=12) {
+    alert('It is high number');
     //console.log('incorrect answer');
   }
   else{
@@ -155,34 +151,15 @@ for(let i=0; i<4;i++){
     //console.log('incorrect answer');
   }
 }
+
+
 let userGuess= prompt('Can you guess my lovely city in the world?');
 let favCity=['london','sydney','paris','tokyo'];
-for(let i=0; i<5;i++){
-  if(userGuess.toLowerCase()==='london'){
+for(let i=0; i<favCity.length;i++){
+  if(favCity[i].toLowerCase()===userGuess){
     alert('That is correct!');
-    score++;
     //console.log('correct answer');
-    break;
-  }
-  else if(userGuess.toLowerCase()==='sydney'){
-    alert('That is correct!');
     score++;
-    //console.log('correct answer');
-
-    break;
-  }
-  else if(userGuess.toLowerCase()==='paris'){
-    alert('That is correct!');
-    score++;
-    //console.log('correct answer');
-
-    break;
-  }
-  else if(userGuess.toLowerCase()==='tokyo'){
-    alert('That is correct!');
-    score++;
-    //console.log('correct answer');
-
     break;
   }
   else{
@@ -197,8 +174,6 @@ for(let i=0; i<5;i++){
 }
 
 alert('Your score is: '+score+' out of 7');
-
-
 
 alert( userName+' ! Thank you for your time');
 
